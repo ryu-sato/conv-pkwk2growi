@@ -1,4 +1,7 @@
 config/settings.yml
 
+# output files
+dump
+
 # Ruby Gems
 vendor
