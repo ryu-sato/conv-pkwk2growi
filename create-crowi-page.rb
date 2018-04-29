@@ -1,9 +1,19 @@
+# create-crowi-page.rb
+# [NOTE] How to use
+#   input body of crowi's page pass throw STDIN and specified page name with option
+#   ex. echo -e "test \nhoge" | ruby create-crowi-page.rb '/sandbox/create-crowi-page-test'
+
 require 'crowi-client'
 
-page_name = '/test/hoge'
+if ARGV.length < 1
+  puts "$0 CROWI_PAGE_NAME"
+  exit 1
+end
+page_name = ARGV[0]
 
 if CrowiClient.instance.page_exist?(path_exp: page_name)
-  raise "Cannot create page. Because page '#{page_name}' is already exists. You need to delete before register."
+  puts "Cannot create page. Because page '#{page_name}' is already exists. You need to delete before register."
+  exit 1
 end
 
 # Create page and attachment files
