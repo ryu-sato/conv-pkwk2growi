@@ -3,6 +3,9 @@
 # [NOTE] How to use
 #   specify page name and file path of attachments from command line options.
 #   ex. ruby attach-files-to-crowi-page.rb '/sandbox/create-crowi-page-test' create-crowi-page-test/1.png
+#
+# [NOTE]
+#   Cannot attach files to Growi
 
 require 'crowi-client'
 
