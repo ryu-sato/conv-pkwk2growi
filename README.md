@@ -23,13 +23,13 @@ Pukiwiki データを Growi へ登録するための移行ツールです。
 ## コンバート方法
 
 1. Pukiwiki データをディレクトリへ dump する (`dump-pkwk.sh`)
-1. dump したファイルを Markdown 形式へ変更(`dump-pkwk.sh`
-1. Growi(Crowi) へ dump したファイルをアップロードする(`growi-register.sh`)
+1. dump したファイルを Markdown 形式へ変更(`conv-pkwk2md.sh`)
+1. Growi(Crowi) へ dump したファイルをアップロードする(`create-crowi-page.sh`)
 
 ```sh:bash
 sh dump-pkwk.sh
-sh converter.sh
-sh growi-register.sh
+sh conv-pkwk2md.sh
+sh create-crowi-page.sh
 ```
 
 # dependencies
