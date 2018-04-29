@@ -20,14 +20,17 @@ Pukiwiki データを Growi へ登録するための移行ツールです。
 1. Gem ファイルをインストールする
     `bundle install`
 
-## コンバート
+## コンバート方法
 
-1. Pukiwiki データをディレクトリへ dump する
-    `sh dump-pkwk.sh`
-1. dump したファイルを Markdown 形式へ変更
-    `sh converter.sh`
-1. Growi(Crowi) へ dump したファイルをアップロードする
-    `sh growi-register.sh`
+1. Pukiwiki データをディレクトリへ dump する (`dump-pkwk.sh`)
+1. dump したファイルを Markdown 形式へ変更(`dump-pkwk.sh`
+1. Growi(Crowi) へ dump したファイルをアップロードする(`growi-register.sh`)
+
+```sh:bash
+sh dump-pkwk.sh
+sh converter.sh
+sh growi-register.sh
+```
 
 # dependencies
 
