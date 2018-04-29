@@ -1,7 +1,8 @@
 config/settings.yml
 
-# output files
+# input/output files
 dump
+pukiwiki
 
 # Ruby Gems
 vendor

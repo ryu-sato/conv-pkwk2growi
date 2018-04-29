@@ -1,11 +1,7 @@
 #!/bin/bash -ex
 
-PAGE_FILE_NAME="page.txt"
-ATTACHMENTS_DIR_NAME="attachments"
-
-# variables
-# [TODO] enable to set from command line
-DUMP_DIR="/mnt/d/usr/DevApp/repos_github/ryu-sato/conv-pkwk2growi/dump"
+# read variables
+. config/env.sh
 
 # convert pukiwiki pages to markdown
 cd ${DUMP_DIR}

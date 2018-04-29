@@ -1,9 +1,7 @@
 #!/bin/bash -ex
 
-PAGE_FILE_NAME="page.txt"
-ATTACHMENTS_DIR_NAME="attachments"
-CMD_CREATE_CROWI_PAGE="create-crowi-page.rb"
-SCRIPT_PATH="${PWD}"
+# read variables
+. config/env.sh
 
 # variables
 # [TODO] enable to set from command line
