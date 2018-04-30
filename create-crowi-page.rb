@@ -13,8 +13,8 @@ end
 page_name = ARGV[0]
 
 if CrowiClient.instance.page_exist?(path_exp: page_name)
-  puts "Cannot create page. Because page '#{page_name}' is already exists. You need to delete before register."
-  exit 1
+  puts "Cannot create page. Because page '#{page_name}' is already exists. Ignore this page."
+  exit 0
 end
 
 # Create page and attachment files
