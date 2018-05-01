@@ -7,6 +7,9 @@
 # [NOTE]
 #   Cannot attach files to Growi
 
+require 'bundler'
+Bundler.require
+
 require 'crowi-client'
 
 if ARGV.length < 2

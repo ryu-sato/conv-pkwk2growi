@@ -4,6 +4,9 @@
 #   input body of crowi's page pass throw STDIN and specified page name with option
 #   ex. echo -e "test \nhoge" | ruby create-crowi-page.rb '/sandbox/create-crowi-page-test'
 
+require 'bundler'
+Bundler.require
+
 require 'crowi-client'
 
 if ARGV.length < 1
