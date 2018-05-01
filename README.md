@@ -27,9 +27,9 @@ Pukiwiki データを Growi へ登録するための移行ツールです。
 1. Growi(Crowi) へ dump したファイルをアップロードする(`create-crowi-page.sh`)
 
 ```sh:bash
-sh dump-pkwk.sh
-sh conv-pkwk2md.sh
-sh create-crowi-page.sh
+bash dump-pkwk.sh
+bash conv-pkwk2md.sh
+bash create-crowi-page.sh
 ```
 
 # dependencies
