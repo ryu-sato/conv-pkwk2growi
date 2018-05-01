@@ -16,8 +16,8 @@ for f in *.txt; do
 
   # copy page directory
   PAGE_DIR_NAME=$(echo ${PAGE_NAME} | sed -e 's#[^/]/$##g')
-  mkdir -p ${DUMP_DIR}/${PAGE_DIR_NAME}
-  cp -ip ${PUKIWIKI_PAGE_DIR}/${f} ${DUMP_DIR}/${PAGE_DIR_NAME}/${PAGE_FILE_NAME}
+  mkdir -p "${DUMP_DIR}/${PAGE_DIR_NAME}"
+  cp -ip "${PUKIWIKI_PAGE_DIR}/${f}" "${DUMP_DIR}/${PAGE_DIR_NAME}/${PAGE_FILE_NAME}"
 done
 
 # dump attachments
@@ -31,6 +31,6 @@ for f in *; do
   # copy attachments
   PAGE_DIR_NAME=$(echo ${f} | sed -e 's/_.*$//' | sed -e 's/\(..\)/%\1/g' | nkf --url-input)
   ATTACHMENTS_FILE_NAME=$(echo ${f} | sed -e 's/^[^_]*_//g' | sed -e 's/\(..\)/%\1/g' | nkf --url-input)
-  mkdir -p ${DUMP_DIR}/${PAGE_DIR_NAME}/${ATTACHMENTS_DIR_NAME}
-  cp -ip ${PUKIWIKI_ATTACHMENTS_DIR}/${f} ${DUMP_DIR}/${PAGE_DIR_NAME}/${ATTACHMENTS_DIR_NAME}/${ATTACHMENTS_FILE_NAME}
+  mkdir -p "${DUMP_DIR}/${PAGE_DIR_NAME}/${ATTACHMENTS_DIR_NAME}"
+  cp -ip "${PUKIWIKI_ATTACHMENTS_DIR}/${f}" "${DUMP_DIR}/${PAGE_DIR_NAME}/${ATTACHMENTS_DIR_NAME}/${ATTACHMENTS_FILE_NAME}"
 done
