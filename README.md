@@ -42,7 +42,7 @@ bash create-crowi-page.sh
 
 # Known Issue
 
-- [ ] crowi-client が bundle install した後に利用できない
+- [x] crowi-client が bundle install した後に利用できない (2018/05/02 に修正済)
 - [ ] 一部 Growi へアップロードできない Pukiwiki ページがある
     - `/FrontPage`, `InterWikiName`
 - [x] 空白が入っているファイル名を取り扱いできない (2018/05/01 に修正済)
