@@ -5,6 +5,9 @@
 DUMP_DIR="${PWD}/dump"
 ## Target directory to convert (Files are NOT overrided by script.)
 PUKIWIKI_DATADIR="${PWD}/pukiwiki"
+## Use external service pukiwiki2markdown which convert from pukiwiki format to markdown (THANKS TO kaishuu0123)
+USE_PUKIWIKI2MAKRDOWN=true
+PUKIWIKI2MARKDOWN_API_EP="https://pukiwiki2markdown.saino.me/api/v1/convert"
 
 # System config
 SCRIPT_PATH="${PWD}"
