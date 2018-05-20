@@ -21,8 +21,7 @@ for f in `find . -name ${PAGE_FILE_NAME}`; do
       -XPOST \
       -H 'Content-Type: application/json' \
       -d "$JSON" \
-      | jq '.body?' \
-      | sed -z -e 's/\\n/\n/g' \
+      | jq -r '.body?' \
       > "${TEMPFILE}"
   else
     # see. https://qiita.com/yuki-takei/items/152e20f4421333ae8fd9
